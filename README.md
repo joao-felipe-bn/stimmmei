@@ -9,7 +9,7 @@ S.T.I.M.M.M.E.I
 
 * Create new User: 
 initializer rails console: 
-rails s 
+rails c 
 
 user = Usuario.create(login: "seulogin", nome: "seunome", email: "seuemai
 l@gmail.com", ativo: true, password: "suasenha")
