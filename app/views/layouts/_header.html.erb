@@ -1,0 +1,19 @@
+<nav class="navbar mb-2">
+  <div class="container-fluid">
+
+    <% if logged_in? %>
+
+      <div class="navbar-header">
+        <%= link_to "Menu 1", root_path %>
+        <%= link_to "Menu 2", root_path %>  
+      </div>
+
+        <ul class="nav navbar-right ">
+          <li>
+            Bem-Vindo (a): <%= current_user.nome %>
+            <%= link_to "Sair", logout_path, class: "mx-2", method: :delete %>
+          </li> 
+        </ul>
+    <% end %>
+
+  </div>
