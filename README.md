@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+S.T.I.M.M.M.E.I
+ - Sindicato dos Trabalhadores nas Indústrias Metalúrgicas, Mecânicas e de Material Elétrico de Itaquaquecetuba
 
-Things you may want to cover:
+* Ruby version: 2.7.5
 
-* Ruby version
+* Database: Postgres
 
-* System dependencies
+* Create new User: 
+initializer rails console: 
+rails s 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+user = Usuario.create(login: "seulogin", nome: "seunome", email: "seuemai
+l@gmail.com", ativo: true, password: "suasenha")
